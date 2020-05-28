@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'reservations#new'
+  root 'pages#home'
   resources :reservations, except: [:edit, :show]
 end

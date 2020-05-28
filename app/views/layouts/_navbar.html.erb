@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">  
-  <%= link_to 'Bus Ticket', root_path, class:"navbar-brand" %>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">    
+  <%= link_to 'Bus Ticket', root_path, class: "navbar-brand", id: "logo" %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -15,7 +15,7 @@
           Bus
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <%= link_to 'Book Ticket', reservations_path, class:"dropdown-item" %>
+          <%= link_to 'Book Ticket', new_reservation_path, class:"dropdown-item" %>
           <%= link_to 'Booking History', reservations_path, class:"dropdown-item" %>
         </div>
       </li>

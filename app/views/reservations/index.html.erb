@@ -11,11 +11,10 @@
                     <p class="card-text">Name: <%= reservation.name%></p>
                     <p class="card-text">From: <%= reservation.from%></p>
                     <p class="card-text">To: <%= reservation.to%></p>
-                    <p class="card-text">Date_of_journey: <%= reservation.doj%></p>
+                    <p class="card-text">Date of journey: <%= reservation.doj%></p>
                     <p class="card-text">Time: <%= reservation.time%></p>
-                    <p class="card-text">No_of_person: <%= reservation.person%></p>
-                    <div class="container text-center">
-                        <%= link_to 'View', reservation_path(reservation), class: "btn btn-outline-success" %>          
+                    <p class="card-text">Fare: 1200</p>                    
+                    <div class="container text-center">                       
                         <%= link_to 'Cancel Ticket', reservation_path(reservation), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>                                        
                     </div>
                 </div>
