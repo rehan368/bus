@@ -3,6 +3,7 @@
         <h1 class="text-center mt-4" >Bus booking</h1>
         <div class="row justify-content-center">
             <div class="col-10">
+                <%= render 'shared/errors', obj: @reservation %>
                 <%= form_with(model: @reservation, class: "shadow p-3 mb-3 bg-info rounded" , local: true) do |f|    %>
                 <div class="form-group row">
                     <%= f.label :Name, class: "col-2 col-form-label text-light" %>
@@ -13,19 +14,19 @@
                 <div class="form-group row">
                     <%= f.label :From, class: "col-2 col-form-label text-light" %>
                     <div class="col-10">    
-                        <%= f.select :from, ['Delhi', 'Mumabi']%>
+                        <%= f.select :from, ['Thiruvananthapuram','Kochi', 'Kozhikode','Kollam','Thrissur','Kannur','Alappuzha','Kottayam','Palakkad','Malappuram','Manjeri']%>
                     </div>
                 </div>
                 <div class="form-group row">
                     <%= f.label :To, class: "col-2 col-form-label text-light" %>
                     <div class="col-10">    
-                        <%= f.select :to, ['Delhi', 'Mumabi']%>
+                        <%= f.select :to, ['Thiruvananthapuram','Kochi', 'Kozhikode','Kollam','Thrissur','Kannur','Alappuzha','Kottayam','Palakkad','Malappuram','Manjeri']%>
                     </div>
                 </div>
                 <div class="form-group row">
                     <%= f.label :Date_of_Journey, class: "col-2 col-form-label text-light" %>
                     <div class="col-10">    
-                        <%= f.select :doj, ['01/06/2020', '02/06/2020']%>
+                        <%= f.select :doj, ['01/06/2020', '02/06/2020', '03/06/2020', '04/06/2020', '05/06/2020', '06/06/2020', '07/06/2020', '08/06/2020', '09/06/2020', '10/06/2020', '11/06/2020', '12/06/2020', '13/06/2020', '14/06/2020', '15/06/2020']%>
                     </div>
                 </div>
                 <div class="form-group row">
