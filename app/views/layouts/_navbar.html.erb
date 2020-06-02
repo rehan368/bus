@@ -33,7 +33,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <% if !logged_in? %>
-      <%= link_to 'Sign up', signup_path, class: "btn btn-outline-light my-2 my-sm-0" %>
+        <%= link_to 'Sign up', signup_path, class: "btn btn-outline-light my-2 my-sm-0" %>
         <%= link_to 'Log in', login_path, class: "btn btn-outline-light my-2 my-sm-0" %>
       <% else %>
         <%= link_to 'Log out', logout_path, class: "btn btn-outline-light my-2 my-sm-0", method: :delete %>
