@@ -8,7 +8,7 @@ class UsersController < ApplicationController
         if @user.save
            #session[:user_id] = @user.id
             flash[:notice] = "Welcome to the Alpha Blog #{@user.username}, you have successfully signed up"
-            redirect_to root_path   #book_path
+            redirect_to new_reservation_path
         else
             render 'new'
         end
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
         @user=User.find(params[:id])
         if @user.update(params.require(:user).permit(:username, :email, :password))
             flash[:notice] = "Your account information was successfully updated"
-            redirect_to root_path   #book_path
+            redirect_to new_reservation_path
         else
             render 'edit'
         end
