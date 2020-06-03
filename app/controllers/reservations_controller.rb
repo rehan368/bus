@@ -1,4 +1,5 @@
 class ReservationsController < ApplicationController
+    before_action :set_article, only: [:destroy]
     before_action :require_user
     before_action :require_same_user, only: [:destroy]
     def new
@@ -26,14 +27,17 @@ class ReservationsController < ApplicationController
     end
     
     def destroy
-        @reservation = Reservation.find(params[:id])
         @reservation.destroy
         redirect_to reservations_path
     end
 
+    private
+    def set_article
+        @reservation = Reservation.find(params[:id])
+    end
     def require_same_user
         if current_user!=@reservation.user
-            flash[:alert]="You can only edit or delete your own article"
+            flash[:alert]="You can only delete your own reservation"
             redirect_to reservations_path
         end
     end
