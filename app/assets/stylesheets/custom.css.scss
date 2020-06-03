@@ -18,8 +18,9 @@
 }
 
 .jumbotron {
-    background-image: asset-url('jumbo-img');
+    background-image: asset-url('img01');
     background-position: center center;
+    background-origin: padding-box;
     background-repeat: no-repeat;
     background-size: cover;
     height: 425px;

@@ -14,7 +14,7 @@
                         <p class="card-text">To: <%= reservation.to%></p>
                         <p class="card-text">Date of journey: <%= reservation.doj%></p>
                         <p class="card-text">Time: <%= reservation.time%></p>
-                        <p class="card-text">Fare: 1200</p>                    
+                        <p class="card-text">Fare: INR 1200</p>                    
                         <div class="container text-center">                       
                             <%= link_to 'Cancel Ticket', reservation_path(reservation), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>                                        
                         </div>
