@@ -1,24 +1,12 @@
-# README
+                    Web Programming Assignment - 2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+                        Online Bus Reservation
 
-Things you may want to cover:
+Description :-
 
-* Ruby version
+    Online bus reservation rails app provides a portal for bus ticket reservation. This application allows users to book bus tickets from anywhere and anytime. The user can easily book their tickets and cancel tickets.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Submitted By :-
+    1. Yuvraj Bedi          M190370CA
+    2. Rehan Raza           M190368CA
+    3. Kundan Singh Patel   M190377CA
