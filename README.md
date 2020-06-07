@@ -4,7 +4,7 @@
 
 Description :-
 
-    Online bus reservation rails app provides a portal for bus ticket reservation. This application allows users to book bus tickets from anywhere and anytime. The user can easily book their tickets and cancel tickets.
+    Online Bus Tickets Reservation rails app provides a portal for bus ticket reservation from anywhere and anytime. The user can easily book their tickets and cancel tickets. The user can also view the detail history of previously booked tickets.
 
 Submitted By :-
     1. Yuvraj Bedi          M190370CA
